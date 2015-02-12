@@ -1,0 +1,27 @@
+---
+layout: default
+---
+{% include JB/setup %}
+
+<div class="row-fluid">
+  <div id="left-pane" class="span7">
+    <div class="content page">
+<!--
+      <h1 class="title">{% if page.header %}{{ page.header }}{% else %}{{ page.title }}{% endif %}</h1>
+-->
+      <h1 class="title">{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+      <small>{{ page.description }}</small>
+      <hr>
+      {{ content }}
+    </div>  
+  </div>
+  <div id="right-pane" class="span5">
+    <div id="sidetab" class="sidetab">
+      <h2>My Projects:</h2>
+      {% assign tabs_list = site.pages %}
+      {% assign tab_type = 'projects' %}
+      {% include tabs_list %}
+    </div>
+    {% include tagcloud-sidebar.html %}
+  </div>
+</div>

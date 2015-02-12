@@ -1,0 +1,17 @@
+
+    <div id="navbar">
+      <ul>
+        {% assign nav_list = site.navbar %}
+        {% assign highlight_active_nav = true %}
+        {% include nav_list %}
+      </ul>
+    </div>
+    {% assign sz = site.navbar | size %}
+    {% if sz != 0 %}
+    <script type="text/javascript">
+      $(function() {
+        $("#navbar ul li").css("width", "{{ 100 | divided_by:sz }}%");
+      });
+    </script>
+    {% endif %}
+    {% assign sz = nil %}

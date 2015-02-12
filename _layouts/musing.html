@@ -1,0 +1,19 @@
+---
+layout: with-nav
+---
+{% include JB/setup %}
+
+<div class="row-fluid">
+  <div id="left-pane" class="span7">
+    <div class="content page">
+      <h1 class="title">{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+      <small>{{ page.description }}</small>
+      <hr>
+      {{ content }}
+    </div>  
+  </div>
+  <div id="right-pane" class="span5">
+    {% assign tag_cloud = site.tags %}
+    {% include tagcloud-sidebar.html %}
+  </div>
+</div>

@@ -1,0 +1,24 @@
+#!/bin/bash
+
+set -e
+
+# the pygments gem takes a big shit when running python 2.5.1
+#   PATH="/usr/local/.package/python-2.7.1/bin:$PATH"
+#   export PATH
+
+#-----------
+# get the directory where this script is located
+SOURCE="${BASH_SOURCE[0]}"
+while [ -h "$SOURCE" ]; do # resolve $SOURCE until the file is no longer a symlink
+  DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+  SOURCE="$(readlink "$SOURCE")"
+  [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE" # if $SOURCE was a relative symlink, we need to resolve it relative to the path where the symlink file was located
+done
+DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+
+#-----------
+# run homepage
+set -x
+cd $DIR
+ruby ./homepage.rb $@
+cd -

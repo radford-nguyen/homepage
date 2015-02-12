@@ -1,0 +1,3 @@
+{% assign BASE_PATH = nil %}
+{% assign HOME_PATH = nil %}
+{% capture ASSET_PATH %}{{ BASE_PATH }}/assets/themes/{{ site.theme }}{% endcapture %}

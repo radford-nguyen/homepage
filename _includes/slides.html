@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>SSLT Client Architecture Review</title>
+
+    <meta name="author" content="Radford Nguyen">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="{{ASSET_PATH}}../slides/css/reveal.min.css">
+    <link rel="stylesheet" href="{{ASSET_PATH}}../slides/css/theme/simple.css" id="theme">
+
+    <link rel="stylesheet" href="{{ASSET_PATH}}../slides/lib/css/zenburn.css">
+
+    <script>
+      document.write( '<link rel="stylesheet" href="{{ASSET_PATH}}../slides/css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+    </script>
+  </head>
+
+  <body>
+
+<!-- This looks stupid at the top, but i can't put it at the bottom
+     without srsly screwing up the progress bar
+    <div class="header" style="text-align:center; margin:10px 0;"><small>&copy; {{ site.time | date: "%Y" }} AMD Confidential. All rights reserved.</small></div>
+-->
+    <div class="reveal">
+      <div class="slides">
+      {{ content }}
+      </div>
+    </div>
+
+    <script src="{{ASSET_PATH}}../slides/lib/js/head.min.js"></script>
+    <script src="{{ASSET_PATH}}../slides/js/reveal.min.js"></script>
+
+    <script>
+
+      // Full list of configuration options available here:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: false,
+        progress: true,
+        history: true,
+        center: true,
+        transition: 'linear',
+        transitionSpeed: 'fast',
+        gestureDelay: 0,
+        dependencies: [
+          { src: '{{ASSET_PATH}}../slides/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '{{ASSET_PATH}}../slides/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '{{ASSET_PATH}}../slides/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
+
+
+

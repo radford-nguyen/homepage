@@ -1,0 +1,30 @@
+{%comment %}<!--
+The tabs_list include is a listing helper.
+usage:
+  1) assign 'tabs_list' variable to a valid array of pages of posts.
+  2) assign 'tab_type' variable to a value to filter pages/posts
+     by their tabtypes property
+  3) include/tabs_list
+-->{% endcomment %}
+  
+<ul id="tab-list" class="nav nav-pills">
+{% for node in tabs_list %}
+  {% if node.tabtypes contains tab_type %}
+    <li><a href="#">{{node.title}}</a></li>
+  {% endif %}
+{% endfor %}
+</ul>
+<div id="tab-content-wrapper">
+{% for node in tabs_list %}
+  {% if node.tabtypes contains tab_type %}
+    <div>
+      <h3>{{node.title}}</h3>
+      <p>{{node.description}}</p>
+      <p style="margin-top:40px">
+        <a href="{{BASE_PATH}}{{node.url}}" class="btn" target="_blank">Go to page</a> <small>(new window)</small>
+      </p>
+    </div>
+  {% endif %}
+{% endfor %}
+</div>
+

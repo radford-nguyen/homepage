@@ -1,0 +1,18 @@
+
+<div id="sidetab" class="sidetab">
+<h2>by Tag:</h2>
+<div class="tag-cloud">
+   {% for tag in tag_cloud %}
+      <a href="#posts-tag" id="{{ forloop.index }}" class="__tag" style="margin: 5px">{{ tag[0] }}</a>
+      <ul id="list_{{ forloop.index }}" style="display:none;">
+         {% for post in tag[1] reversed %}
+            <li><a href="{{BASE_PATH}}{{ post.url }}">{{ post.title }}</a></li>
+         {% endfor %}
+      </ul>
+   {% endfor %}
+</div>
+<div id ="posts-tags" class="post-list">
+</div>
+</div>
+{% assign tag_cloud = nil %}
+

@@ -1,0 +1,38 @@
+{% comment %}<!--
+The nav_list include is a listing helper.
+Usage:
+  1) assign the 'nav_list' variable to a valid array of pages or posts.
+  2) include nav_list
+  example:
+    <ul>
+  	  {% assign nav_list = site.pages %}  
+  	  {% include nav_list %}
+  	</ul>
+  	
+  Active Type: (optional): 
+    If a page/post has a type attribute, and it matches the current
+    page's type attribute, then the page/post's <li> and <a> elements
+    will be given class="active".  This is useful for style rules
+    targeted at specific elements.
+  	
+-->{% endcomment %}
+
+{% for node in nav_list %}
+  {% if node.title != null %}
+    {% if node.absurl %}
+      {% if highlight_active_nav and node.type == page.type %}
+        <li class="active"><a href="{{node.url}}" class="active">{{node.title}}</a></li>
+      {% else %}
+        <li><a href="{{node.url}}">{{node.title}}</a></li>
+      {% endif %}
+    {% else %}
+      {% if highlight_active_nav and node.type == page.type %}
+        <li class="active"><a href="{{ BASE_PATH }}{{node.url}}" class="active">{{node.title}}</a></li>
+      {% else %}
+        <li><a href="{{ BASE_PATH }}{{node.url}}">{{node.title}}</a></li>
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign nav_list = nil %}
+{% assign highlight_active_nav = nil%}

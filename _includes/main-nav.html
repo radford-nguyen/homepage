@@ -1,0 +1,12 @@
+
+    <div id="navigation">
+      <ul>
+        {% assign nav_list = site.topbar %}
+        {% include nav_list %}
+        <li class="divider-vertical"></li>
+        <li>
+          last updated
+          <span class="label" style="background:#777">{{ site.time | date: "%Y.%m.%d" }}</span>
+        </li>
+      </ul>
+    </div>

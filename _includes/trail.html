@@ -1,0 +1,31 @@
+<div class="row-fluid">
+  <div id="left-pane" class="span7">
+    <div class="content post">
+      <h1 class="title">{{ page.title }}</h1>
+      {{ page.description }}
+      <hr />
+      {{ content }}
+{% assign foo = site.categories[{{page.category}}] %}  
+    {% for f in foo  reversed %}
+    {% if bar %}
+      <hr>
+      <div>
+        <a href="{{ BASE_PATH }}{{ f.url }}" class="btn btn-success btn-large">Next Step: {{ f.title }} &rarr;</a>
+      </div>
+      {% assign bar = nil %}
+    {% else %}
+      {% if page.id == f.id %}
+        {% assign bar = "bar" %}
+      {% endif %}
+    {% endif %}
+    {% endfor %}
+{% assign foo = nil %}
+{% assign bar = nil %}
+    </ul>
+    </div>  
+  </div>
+  <div id="right-pane" class="span5">
+      <hr />
+    {% include contents-sidebar.html %}
+  </div>
+</div>
