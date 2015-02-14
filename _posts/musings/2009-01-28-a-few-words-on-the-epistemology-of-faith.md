@@ -6,4 +6,6 @@ category: musings
 tags: [musings]
 ---
 
-_***brain explodes***_
+{% include JB/setup %}
+
+<div><img src="{{ BASE_PATH }}/assets/img/mind-blown.gif"></div>

@@ -8,6 +8,10 @@ p {
   font-size:16px; line-height:22px;
 }
 
+p a {
+  text-decoration:underline;
+}
+
 h3 {
   font-size:22px; line-height:33px;
 }
@@ -273,7 +277,7 @@ div img{margin:auto;display:block}
 .list-group-item.active:focus,
 .list-group-item.active:hover {
   z-index:2;
-  background-color:#337ab7;
+  background-color:#046D8B;
   color:#f5f5f5;
   border-color:#eee;
 }
@@ -284,6 +288,16 @@ a.list-group-item:hover {
 }
 .list-group-item {
   border-color:#eee;
+}
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary {
+  color:#f5f5f5;
+  background-color:#046D8B;
+  border-color:#046D8B;
 }
 
 .row {

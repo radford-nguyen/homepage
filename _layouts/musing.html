@@ -4,29 +4,12 @@ type: musings
 ---
 {% include JB/setup %}
 
-<!--
-<div class="row-fluid">
-  <div id="left-pane" class="span7">
-    <div class="content page">
-      <h1 class="title">{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
-      <small>{{ page.description }}</small>
-      <hr>
-      {{ content }}
-    </div>  
-  </div>
-  <div id="right-pane" class="span5">
-    {% assign tag_cloud = site.tags %}
-    {% include tagcloud-sidebar.html %}
-  </div>
-</div>
--->
-
 <div class="container">
 
   <div class="row row-offcanvas row-offcanvas-right">
     <div class="col-xs-12 col-sm-9">
       <p class="pull-right visible-xs">
-        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">toggle listing</button>
       </p>
       <div class="jumbotron">
         <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
