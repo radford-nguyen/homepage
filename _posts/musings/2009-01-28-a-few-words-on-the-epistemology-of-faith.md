@@ -6,4 +6,4 @@ category: musings
 tags: [musings]
 ---
 
-_*brain explodes*_
+_***brain explodes***_

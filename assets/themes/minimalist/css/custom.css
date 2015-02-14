@@ -170,7 +170,6 @@ h3 {margin:0px 0 10px 0}
   margin-bottom:10px;
 }
 #navbar ul {
-  width:90%;
   margin:0 auto;
   list-style:none;
   padding:10px 0;
@@ -188,8 +187,10 @@ h3 {margin:0px 0 10px 0}
   color:#bbb;
 }
 #navbar ul a.active {
+  z-index:1;
   background-color:#eee;
-  color:#046d8b;
+  /*color:#046d8b;*/
+  color:#777;
 }
 
 
@@ -262,7 +263,38 @@ div img{margin:auto;display:block}
 .jumbotron h1 {
   font-size: 36px;
 }
+.jumbotron {
+  z-index:0;
+  color:#046D8B;
+  background-color:#eee;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus,
+.list-group-item.active:hover {
+  z-index:2;
+  background-color:#337ab7;
+  color:#f5f5f5;
+  border-color:#eee;
+}
+a.list-group-item,
+a.list-group-item:focus,
+a.list-group-item:hover {
+  color:#337ab7;
+}
+.list-group-item {
+  border-color:#eee;
+}
+
+.row {
+  margin-top:20px;
+}
+p.pull-right {
+  background-color:none;
+}
+
 
 @media screen and (min-width:768px) {
 .jumbotron { padding:48px 0; }
 }
+
