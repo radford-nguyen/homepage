@@ -36,9 +36,9 @@ now. "Whatever," I shrugged and began reading.
 
 "OOF," I seemed to say as I stubbed my toe on the corner of the bed,
 "sonofabitchialwaysdothat!" I tossed the journal aside and moved around the room
-in slow motion in a vain attempt to ease the pain. Vain attempt to ease the
-pain? My thoughts immediately turned to my former love interest... :) hah,
-always good for a laugh. Then, in that brief moment of levity and for no reason
+in slow motion in a futile attempt to ease the pain. Futile attempt to ease the
+pain? My thoughts immediately turned to my former love interest... "fuck off" lol.
+Then, in that brief moment of levity and for no reason
 at all, I thought of the Stay Puft Marshmallow Man. "Oh fuc...."
 
 Darkness. Silence. Nothingness. Way to unmake all of existence, dumbass. Wait a

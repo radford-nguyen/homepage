@@ -54,7 +54,7 @@ navbar:
     type : 'mewmew'
   - 
     url : '/pages/doodles'
-    title : 'doodles... mew'
+    title : 'doodles...mew'
     type : 'doodles'
 
 # The production_url is only used when full-domain names are needed

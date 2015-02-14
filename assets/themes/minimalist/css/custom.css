@@ -244,13 +244,13 @@ dl { /*color: #800000;
 }
 dt { font-weight: bold;
   color: #0292F0;
-     font-family: monospace;
-     font-size:20px;
-     padding-top:5px;
+  font-family: monospace;
+  font-size:20px;
+  padding-top:5px;
 }
 dd { /*color: #808000;*/
   text-align:left;
-  }
+}
 div#posts-tags{margin:25px 50px;}
 .tag-cloud{text-align:right;margin-top:25px;}
 
@@ -258,3 +258,11 @@ div.img{border:1px #ccc dashed; padding:10px}
 div.img-clean{border:none; padding:20px}
 div img{margin:auto;display:block}
 
+
+.jumbotron h1 {
+  font-size: 36px;
+}
+
+@media screen and (min-width:768px) {
+.jumbotron { padding:48px 0; }
+}
