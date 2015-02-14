@@ -3,6 +3,7 @@ layout: with-nav
 ---
 {% include JB/setup %}
 
+<!--
 <div class="row-fluid">
   <div id="left-pane" class="span7">
     <div class="content page">
@@ -17,3 +18,29 @@ layout: with-nav
     {% include tagcloud-sidebar.html %}
   </div>
 </div>
+-->
+
+<div class="container">
+
+  <div class="row row-offcanvas row-offcanvas-right">
+    <div class="col-xs-12 col-sm-9">
+      <p class="pull-right visible-xs">
+        <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+      </p>
+      <div class="jumbotron">
+        <h1>{{ page.title }} {% if page.tagline %} <small>{{ page.tagline }}</small>{% endif %}</h1>
+        <small>{{ page.description }}</small>
+      </div>
+      <hr>
+      <div class="content page">
+        {{ content }}
+      </div>  
+    </div><!--/.col-xs-12.col-sm-9-->
+
+    <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar">
+      <div class="list-group">
+        {% assign pages_links = site.categories["musings"] %}
+        {% include pages_links %}
+      </div>
+    </div><!--/.sidebar-offcanvas-->
+  </div><!--/row-->

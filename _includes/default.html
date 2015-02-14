@@ -11,18 +11,34 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="{{ ASSET_PATH }}/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="{{ site.rad.BOOTSTRAP }}/css/bootstrap.min.css" rel="stylesheet">
+<!--
+<link href="{{ ASSET_PATH }}/css/bootstrap.min.css" rel="stylesheet">
+-->
     <link href="{{ ASSET_PATH }}/css/custom.css?v=0.3" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/syntax.css?body=1" rel="stylesheet" type="text/css" media="all">
     <link href="{{ ASSET_PATH }}/css/syntax-light.css?body=1" rel="stylesheet" type="text/css" media="all">
-    <script src="{{ HOME_PATH }}/assets/jquery-1.7.1.min.js"></script>
+    <link href="{{ site.rad.BOOTSTRAP }}/offcanvas.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="favicon.jpg">
+  <!--
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </head>
 
   <body>
 
     {% include main-nav.html %}
     
+<!--
     <div id="main" class="container" style="width:90%; margin:0 auto; position:relative">
+-->
+    <div id="main" class="container">
       {{ content }}
       <hr>
       <footer class="footer" style="text-align:center; margin:40px 0">
@@ -109,5 +125,7 @@
       });
    });
 </script>
+    <script src="{{ site.rad.BOOTSTRAP }}/offcanvas.js"></script>
+    <script src="{{ site.rad.BOOTSTRAP }}/js/bootstrap.min.js"></script>
   </body>
 </html>

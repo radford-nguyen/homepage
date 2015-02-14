@@ -67,6 +67,10 @@ navbar:
 #
 production_url : radford-nguyen
 
+# rad is the namespace for my config options
+rad :
+  BOOTSTRAP : /assets/bootstrap-3.3.2-dist
+
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
 JB :

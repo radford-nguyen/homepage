@@ -1,0 +1,45 @@
+{% comment %}<!--
+The pages_links include is a listing helper.
+Usage:
+  1) assign the 'pages_links' variable to a valid array of pages or posts.
+  2) include pages_links
+  example:
+    <ul>
+  	  {% assign pages_links = site.pages %}  
+  	  {% include pages_links %}
+  	</ul>
+
+  The pages_links array will be displayed in reverse order
+  	
+  Grouping: (optional): 
+  	assign the 'pages_group' variable to constrain the list to only pages/posts
+  	in the given pages_group. Note you must define the pages_group manually in the page/post
+  	meta-data to use this feature.
+  	Grouping is mainly helpful for non-post pages.
+  	If you want to pages_group posts, it's easier/better to tag them, then pass the tagged posts array.
+  	i.e. site.tags.cool_tag (this returns an array of posts tagged: cool_tag)
+  	
+-->{% endcomment %}
+
+{% for node in pages_links reversed %}
+  {% if node.title != null %}
+    {% if pages_group == null or pages_group == node.group %}
+      {% if page.url == node.url %}
+        {% if node.absurl %}
+          <a href="{{node.url}}" class="list-group-item active">{{node.title}}</a>
+        {% else %}
+          <a href="{{ BASE_PATH }}{{node.url}}" class="list-group-item active">{{node.title}}</a>
+        {% endif %}
+      {% else %}
+        {% if node.absurl %}
+          <a href="{{node.url}}" class="list-group-item">{{node.title}}</a>
+        {% else %}
+          <a href="{{ BASE_PATH }}{{node.url}}" class="list-group-item">{{node.title}}</a>
+        {% endif %}
+      {% endif %}
+    {% endif %}
+  {% endif %}
+{% endfor %}
+{% assign pages_links = nil %}
+{% assign pages_group = nil %}
+
