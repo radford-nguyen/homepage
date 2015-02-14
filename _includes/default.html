@@ -35,9 +35,6 @@
 
     {% include main-nav.html %}
     
-<!--
-    <div id="main" class="container" style="width:90%; margin:0 auto; position:relative">
--->
     <div id="main" class="container">
       {{ content }}
       <hr>
@@ -47,7 +44,9 @@
       </footer>
     </div> <!-- /container -->
     
-    <!--script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script-->
+    <script src="{{ site.rad.BOOTSTRAP }}/offcanvas.js"></script>
+    <script src="{{ site.rad.BOOTSTRAP }}/js/bootstrap.min.js"></script>
+
     <script src="{{ HOME_PATH }}/assets/app.js?v=0.1"></script>
     
     <script>
@@ -125,7 +124,5 @@
       });
    });
 </script>
-    <script src="{{ site.rad.BOOTSTRAP }}/offcanvas.js"></script>
-    <script src="{{ site.rad.BOOTSTRAP }}/js/bootstrap.min.js"></script>
   </body>
 </html>

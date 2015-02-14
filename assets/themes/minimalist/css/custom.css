@@ -263,6 +263,13 @@ div.img{border:1px #ccc dashed; padding:10px}
 div.img-clean{border:none; padding:20px}
 div img{margin:auto;display:block}
 
+div.centered{
+  margin:auto;
+  display:block;
+  float:none;
+}
+
+
 
 .jumbotron h1 {
   font-size: 36px;
@@ -271,8 +278,12 @@ div img{margin:auto;display:block}
   z-index:0;
   color:#046D8B;
   background-color:#eee;
+  margin-top:20px;
 }
 
+div.list-group {
+  margin-top:20px;
+}
 .list-group-item.active,
 .list-group-item.active:focus,
 .list-group-item.active:hover {
@@ -300,9 +311,6 @@ a.list-group-item:hover {
   border-color:#046D8B;
 }
 
-.row {
-  margin-top:20px;
-}
 p.pull-right {
   background-color:none;
 }

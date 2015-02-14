@@ -4,7 +4,7 @@ type: musings
 ---
 {% include JB/setup %}
 
-Usually, I stay sane by [playing soccer][1]-- when the game is played at a
+Usually, I stay sane by [playing soccer][1]. When the game is played at a
 sufficiently tactical level, it is just as much about speed-of-thought
 as it is about physical strength and endurance. It's a fucking shot of life.
 

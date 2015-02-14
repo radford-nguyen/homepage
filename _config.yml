@@ -50,7 +50,7 @@ navbar:
     type : 'musings'
   - 
     url : '/pages/mewmew'
-    title : 'mew mew'
+    title : 'mewmew'
     type : 'mewmew'
   - 
     url : '/pages/doodles'
