@@ -37,10 +37,6 @@ topbar:
 
 navbar:
   - 
-    url : '/'
-    title : 'ohai'
-    type : 'ohai'
-  - 
     url : '/pages/music'
     title : 'music'
     type : 'music'
