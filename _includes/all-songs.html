@@ -1,0 +1,8 @@
+
+{% for song in site.rad.musics %}
+<h3>{{ song.title }}</h3>
+<audio controls>
+  <source src="/assets/audio/reason/{{ song.fname }}">
+  Sorry, your browser is a p.o.s. and doesn't support the &lt;audio&gt; element.
+</audio>
+{% endfor %}

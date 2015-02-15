@@ -68,8 +68,45 @@ navbar:
 production_url : radford-nguyen
 
 # rad is the namespace for my config options
-rad :
-  BOOTSTRAP : /assets/bootstrap-3.3.2-dist
+rad:
+  BOOTSTRAP: /assets/bootstrap-3.3.2-dist
+  musics:
+    -
+      title: 'the bath crew'
+      fname: 'scr11-the_bath_crew.mp3'
+    -
+      title: 'future-proof redneck existentialism'
+      fname: 'scr05-future-proof_redneck_existentialism.mp3'
+    -
+      title: 'the abysmal plane'
+      fname: 'scr23-the_abysmal_plane.mp3'
+    -
+      title: 'first steps'
+      fname: 'scr21-first_steps.mp3'
+    -
+      title: 'a sitcom life'
+      fname: 'scr04-a_sitcom_life.mp3'
+    -
+      title: 'go away trombone'
+      fname: 'scr07-go_away_trombone.mp3'
+    -
+      title: 'the jovian system'
+      fname: 'scr18-the_jovian_system.mp3'
+    -
+      title: "i have no idea what i'm doing"
+      fname: "scr09-i_have_no_idea_what_im_doing.mp3"
+    -
+      title: 'i was gonna get sentimental but then i stopped'
+      fname: 'scr10-i_was_gonna_get_sentimental_but_then_i_stopped.mp3'
+    -
+      title: 'auld lang syne'
+      fname: 'scr22-auld_lang_syne.mp3'
+    -
+      title: 'auld lang syne NYE 2009 party version'
+      fname: 'auld_lang_syne_NYE_2009.mp3'
+    -
+      title: 'the bday song'
+      fname: 'the_bday_song.mp3'
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
