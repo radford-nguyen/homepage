@@ -8,7 +8,9 @@ Usually, I stay sane by [playing soccer][1]. When the game is played at a
 sufficiently tactical level, it is just as much about speed-of-thought
 as it is about physical strength and endurance. It's a fucking shot of life.
 
-But sometimes the weather is shit for weeks at a time...
+But sometimes the weather is shit for weeks at a time, and my sanity takes
+leave as I adopt a world-weary attitude, seeking but rarely finding stimulation
+as I hide in plain sight amongst the denizens of the night.
 
 > You ask me how I became a madman. It happened thus:
 >

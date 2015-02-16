@@ -4,6 +4,10 @@ p, html, body {
   font-family:"Proxima Nova Regular","Helvetica Neue",Calibri,"Droid Sans",Helvetica,Arial,sans-serif;
 }
 
+body {
+  padding-top: 70px;
+}
+
 p {
   font-size:16px; line-height:22px;
 }
@@ -176,14 +180,15 @@ h3 {margin:0px 0 10px 0}
 #navbar ul {
   margin:0 auto;
   list-style:none;
-  padding:10px 0;
+  padding:20px;
 }
 #navbar ul li { 
   list-style-type:none;
   text-align:center;
-  float:left;
+  /*float:left;*/
   display:inline;
   font-size:16px;
+  /*padding: 20px 0;*/
 }
 #navbar ul a {
   padding:6px 12px;
@@ -192,9 +197,9 @@ h3 {margin:0px 0 10px 0}
 }
 #navbar ul a.active {
   z-index:1;
-  background-color:#eee;
-  /*color:#046d8b;*/
-  color:#777;
+  /*background-color:#eee;
+  color:#777;*/
+  color: #cb4b16;
 }
 
 
@@ -203,7 +208,6 @@ h3 {margin:0px 0 10px 0}
   padding:0;
   color:#999;
   background-color:#333;
-  margin-bottom:10px;
 }
 #navigation ul {
   width:90%;
@@ -263,12 +267,18 @@ div.img{border:1px #ccc dashed; padding:10px}
 div.img-clean{border:none; padding:20px}
 div img{margin:auto;display:block}
 
-div.centered{
+.centered{
   margin:auto;
   display:block;
   float:none;
 }
 
+div.youtube {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.fit { max-width: 90%; }
 
 
 .jumbotron h1 {

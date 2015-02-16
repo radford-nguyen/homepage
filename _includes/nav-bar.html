@@ -6,6 +6,7 @@
         {% include nav_list %}
       </ul>
     </div>
+{% comment %}
     {% assign sz = site.navbar | size %}
     {% if sz != 0 %}
     <script type="text/javascript">
@@ -15,3 +16,5 @@
     </script>
     {% endif %}
     {% assign sz = nil %}
+{% endcomment %}
+    {% assign nav_list = nil %}

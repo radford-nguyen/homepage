@@ -14,7 +14,11 @@ were sandwiched between the passenger door and the 10 lbs cooler of turkey
 riding shotgun. _No problem. I'll just turn on the radio_.
 
 The local jazz station was playing some Earl Hines. _Awwww yeah, I can get used
-to this!_ I drive out of range within 30 seconds. _Fuck. What else is on? Country.
+to this!_
+
+I drive out of range within 30 seconds. _Fuck._
+
+_What else is on? Country.
 No. Country. No. Classic Rock. No, I'm not that tired yet. What the? Can it be??
 Holy shit it can- it's THE MONKEES._
 
