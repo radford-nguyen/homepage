@@ -16,7 +16,7 @@ personality and bring me back to life.
 
 Not that I want to live forever, but it'd be interesting to see what kind of
 social constructs remain after we hit a post-scarcity society.  Personally, I'm
-hoping for something like anarchist utopian ideals of [The Culture][1] novels,
+hoping for something like the anarchist utopian ideals of [The Culture][1] novels,
 where "Money is a sign of poverty."
 
 [1]: http://en.wikipedia.org/wiki/The_Culture
