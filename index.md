@@ -6,13 +6,18 @@ type: main
 ---
 {% include JB/setup %}
 
-Hey, I'm radford-nguyen. You are here, accidentally no doubt, on
-my personal webpage of stuff. I'm typically not the type to put all
-my mediocre, uninspired work on the web, but after the Singularity hits,
-humans, or something like them, will be able to
-bring back the dead from their online personas, and I don't want
-to miss out on that gravy train.
+Whoops, you've stumbled upon my webpage of my random personal stuff, placed here so
+that future humans (or robot overlords) will be able to reconstruct my
+personality and bring me back to life.
 
-So here you are, and this is me. If you don't like it, you can have a
-nice day.
+<div>
+<img class="fit" src="/assets/img/jarhead.png" />
+</div>
+
+Not that I want to live forever, but it'd be interesting to see what kind of
+social constructs remain after we hit a post-scarcity society.  Personally, I'm
+hoping for something like [The Culture][1] novels, where "Money is a sign of
+poverty."
+
+[1]: http://en.wikipedia.org/wiki/The_Culture
 
